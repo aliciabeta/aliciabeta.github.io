@@ -1,12 +1,12 @@
 def build_header(title: str):
-    header_html = open("header.template", "r").read()
+    header_html = open("header.template", "r").read().rstrip()
     if title is not None:
         header_html = header_html.replace('<title></title>', f'<title>{title}</title>')
     return header_html
 
 
 def build_footer():
-    return open("footer.template", "r").read()
+    return open("footer.template", "r").read().rstrip()
 
 
 def build_about(title: str):
