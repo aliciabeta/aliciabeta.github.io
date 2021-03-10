@@ -1,0 +1,70 @@
+﻿<?php $page_title = "Alicia Beta - About"?>
+<?php include("../header.php");?>
+
+<?php
+/*calculate years old and years painting*/
+$birthdate = new DateTime("1988-11-14");
+$paintdate = new DateTime("2007-01-01");
+$today     = new DateTime();
+$yearsOld = $today->diff($birthdate)->format('%y');
+$yearsPainting = $today->diff($paintdate)->format('%y');
+/* Usage: <?php echo $yearsOld; ?> or <?php echo $yearsPainting; ?> */
+?>
+
+<div class="container" id="about">
+  <div class="row no-gutter" id="bio">
+    <div class="col-xs-12 col-sm-5 pull-right">
+      <div>
+        <img class="img-responsive" src="/images/alicia.jpg" alt="Alicia Beta" id="me">
+      </div>
+    </div>
+    <h3>About</h3>
+    <p>I am an emerging artist local to Orlando, Florida. My work explores the relationship between expressionism and figuration.  I love to use bright and vibrant colors with bold brush strokes to bring dimension to the surface of each piece.</p>
+    
+    <h4>Biography</h4>
+    <p>Alicia Betancourt was born overseas in Germany while her father served in the US Air Force. She has lived many places and traveled the country. In her early career she was a licensed cosmetologist for 10 years where she had found her passion for counseling and helping people with their life issues. Alicia attended graduate school at the University of Central Florida College of Social Work. Currently, she works as a Medical Social Worker in a large Hospital Emergency Department. Painting has become her creative outlet and emotional release. Her inspiration derives from many artists and artworks including those of Voka, Dali, and Van Gogh.</p>
+    
+    <h4>Upcoming Shows</h4>
+    <p>
+      <ul class="list-unstyled">
+        <li>Art Show : January 12-13, 2019. St. Pete Beach Corey Art & Craft Fair. St. Pete Beach, Florida</li>
+        <li>Art Show : February 23-24, 2019. Downtown Stuart Art Festival. Stuart, Florida</li>
+      </ul>
+    </p>
+    
+    <h4>Recent Work</h4>
+    <p>
+      <ul class="list-unstyled">
+        <li>Art Show : December 1-2, 2018. Downtown Festival Art Show. Gainesville, Florida</li>        
+        <li>Art Show : October 27-28, 2018. Ocala Arts Festival. Ocala, Florida</li>
+        <li>Art Show : October 13-14, 2018. Winter Park Autumn Art Festival. Winter Park, Florida</li>
+        <li>Art Show : September 22-23, 2018. Craft Festival. Downtown Delray Beach, Florida</li>
+        <li>Gallery Exhibit : July 19 - August 11, 2018. Sensory Overload Art Show. Orlando, Florida</li>
+        <li>Art Show : May 12-13, 2018. Mayfaire by-the Lake. Lakeland, Florida</li>
+        <li>Art Show : March 24-25, 2018. Indialantic Art Festival. Melbourne, Florida</li>
+        <li>Art Show : March 3-4, 2018. Windermere Art Affair. Windermere, Florida</li>
+        <li>Gallery Exhibit : February 15-17, 2018. NudeNite. Orlando, Florida</li>
+        <li>Gallery Exhibit : February 15 – March 9, 2018. CityArts Factory. Orlando, Florida</li>
+        <li>Art Show : January 27-28, 2018. Coral Gables Festival of the Arts. Coral Gables, Florida</li>
+        <li>Art Show : December 16-17, 2017. St. Petersburg holiday of the Arts. St. Petersburg, Florida</li>
+        <li>Art Show : December 9-10, 2017. Lido Beach Holiday of the Arts. Lido Beach, Florida</li>
+        <li>Art Show : November 18-19, 2017. Estero Fine art Show. Estero/Fort Myers, Florida</li>
+        <li>Art Show : November 4-5, 2017. Downtown Venice Art Festival. Venice, Florida</li>
+        <li>Art Show : October 21-22, 2017. ARToberFEST. Winter Springs, Florida</li>
+        <li>Art Show : October 14-15, 2017. Hyde Park Village Art Fair. Tampa, Florida</li>
+        <li>Gallery Exhibit : September 2017. June Engineering. Winter Garden, Florida</li>
+        <li>Gallery Exhibit : August 2017. June Engineering. Winter Garden, Florida</li>
+        <li>Gallery Exhibit : August 2017. SOBO Art Gallery. Winter Garden, Florida. Go With The Flow</li>
+        <li>Gallery Exhibit : May-September 2017. Albin Polasek Museum and Sculpture Garden. Winter Park, Florida. Summer of Love: Reflections on Pulse</li>
+        <li>Gallery Exhibit : June-July 2017. SOBO Art Gallery. Winter Garden, Florida. Top Choice</li>
+        <li>Album Art : June 2017. Scholars and Scoundrels: Wired</li>
+        <li>Art Show : March 2017. Uptown Art Expo Altamonte Springs, Florida</li>
+      </ul>
+    </p>
+    
+    <p>If you enjoy my painting style and would like an original piece for yourself please contact me via the contact link above or come out to one of my art shows.</p>
+    <p>Thanks for visiting.</p>
+  </div>
+</div>
+
+<?php include("../footer.php");?>

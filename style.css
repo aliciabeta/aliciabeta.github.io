@@ -1,0 +1,159 @@
+/***********/
+/* General */
+/***********/
+
+body {
+  background-color: #000;
+}
+
+.links {
+  float:right;
+  font-weight: 500;
+}
+
+.links .text{
+  color: #9d9d9d;
+  margin-left: 20px;
+}
+
+.links img{
+  margin-left: 10px;
+}
+
+.links a:hover{
+  color: #fff;
+  text-decoration:none;
+}
+
+img {
+  margin: auto;
+}
+
+/**********/
+/* Header */
+/**********/
+.mainHeader {
+  background-color: #333;
+}
+
+#topHeader {
+  margin-bottom: 10px;
+}
+
+.aliBrand, .links {
+  height: 50px;
+  padding: 15px 15px;
+  line-height: 20px;
+}
+
+.aliBrand {
+  float: left;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.aliBrand a {
+  text-decoration:none;
+  color: #fff;
+}
+
+.aliBrand a:hover {
+  text-decoration:none;
+  color: #9d9d9d;
+}
+
+/***************/
+/* Page layout */
+/***************/
+
+.container {
+  text-align: center;
+  padding: 0;
+}
+
+.row.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row.no-gutter [class*='col-']:not(:first-child),
+.row.no-gutter [class*='col-']:not(:last-child) {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+div.col-xs-12 {
+  padding:0;
+}
+
+/*****************/
+/* Page Specific */
+/*****************/
+
+/* About */
+#about div {
+  text-align: left;
+  background-color: #fff;
+}
+
+img#me {
+  padding-bottom: 15px;
+}
+
+#bio p, #bio h3, #bio h4, #bio ul {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#bio ul {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+/* Contact */
+#contact div {
+  background-color: #fff;
+}
+
+/* Gallery */
+#gallery .left .art {
+  margin-bottom: 10px;
+}
+
+#gallery .right .art {
+  margin-bottom: 10px;
+}
+
+#gallery .caption {
+  background-color: #333;
+  color: #fff;
+}
+
+/********************/
+/* Desktop settings */
+/********************/
+@media (min-width: 768px) {
+/* About */
+  img#me {
+    padding-bottom: 0;
+    padding-left: 15px;
+  }
+
+/* Contact */
+  #contact label {
+    padding-right:15px;
+  }
+
+/* Gallery */
+  #gallery .left.art {
+    margin-right: 10px;
+  }
+
+  #gallery .left {
+    padding-right: 5px;
+  }
+
+  #gallery .right {
+    padding-left: 5px;
+  }
+}
