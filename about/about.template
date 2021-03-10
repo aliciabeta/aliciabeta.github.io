@@ -1,17 +1,4 @@
-﻿<?php $page_title = "Alicia Beta - About"?>
-<?php include("../header.php");?>
-
-<?php
-/*calculate years old and years painting*/
-$birthdate = new DateTime("1988-11-14");
-$paintdate = new DateTime("2007-01-01");
-$today     = new DateTime();
-$yearsOld = $today->diff($birthdate)->format('%y');
-$yearsPainting = $today->diff($paintdate)->format('%y');
-/* Usage: <?php echo $yearsOld; ?> or <?php echo $yearsPainting; ?> */
-?>
-
-<div class="container" id="about">
+﻿<div class="container" id="about">
   <div class="row no-gutter" id="bio">
     <div class="col-xs-12 col-sm-5 pull-right">
       <div>
@@ -24,17 +11,20 @@ $yearsPainting = $today->diff($paintdate)->format('%y');
     <h4>Biography</h4>
     <p>Alicia Betancourt was born overseas in Germany while her father served in the US Air Force. She has lived many places and traveled the country. In her early career she was a licensed cosmetologist for 10 years where she had found her passion for counseling and helping people with their life issues. Alicia attended graduate school at the University of Central Florida College of Social Work. Currently, she works as a Medical Social Worker in a large Hospital Emergency Department. Painting has become her creative outlet and emotional release. Her inspiration derives from many artists and artworks including those of Voka, Dali, and Van Gogh.</p>
     
+    <!--
     <h4>Upcoming Shows</h4>
+    <p>
+      <ul class="list-unstyled">
+        TBD
+      </ul>
+    </p>
+    -->
+    
+    <h4>Past Work</h4>
     <p>
       <ul class="list-unstyled">
         <li>Art Show : January 12-13, 2019. St. Pete Beach Corey Art & Craft Fair. St. Pete Beach, Florida</li>
         <li>Art Show : February 23-24, 2019. Downtown Stuart Art Festival. Stuart, Florida</li>
-      </ul>
-    </p>
-    
-    <h4>Recent Work</h4>
-    <p>
-      <ul class="list-unstyled">
         <li>Art Show : December 1-2, 2018. Downtown Festival Art Show. Gainesville, Florida</li>        
         <li>Art Show : October 27-28, 2018. Ocala Arts Festival. Ocala, Florida</li>
         <li>Art Show : October 13-14, 2018. Winter Park Autumn Art Festival. Winter Park, Florida</li>
@@ -66,5 +56,3 @@ $yearsPainting = $today->diff($paintdate)->format('%y');
     <p>Thanks for visiting.</p>
   </div>
 </div>
-
-<?php include("../footer.php");?>

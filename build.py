@@ -1,12 +1,22 @@
 def build_header(title: str):
-    header_html = open("header.html", "r").read()
+    header_html = open("header.template", "r").read()
     if title is not None:
         header_html = header_html.replace('<title></title>', f'<title>{title}</title>')
     return header_html
 
 
 def build_footer():
-    return open("footer.html", "r").read()
+    return open("footer.template", "r").read()
+
+
+def build_about(title: str):
+    about_html = open("about/index.html", "w")
+    about_html.write(build_header(title))
+
+    about_html.write(open("about/about.template", "r").read())
+
+    about_html.write(build_footer())
+    about_html.close()
 
 
 def build_index_html(title: str):
@@ -42,10 +52,12 @@ def build_index_html(title: str):
     index_html.write('</div>')
 
     index_html.write(build_footer())
+    index_html.close()
 
 
 def build():
     build_index_html('Alicia Beta')
+    build_about('Alicia Beta - About')
 
 
 if __name__ == "__main__":
