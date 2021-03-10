@@ -31,7 +31,7 @@ def build_index_html(title: str):
     index_html.write('    <div class="col-xs-12 col-sm-6 right">')
     file = open("gallery_right.txt", "r")
     for line in file:
-        img, name = line.split(',')
+        name, img = line.split(',')
         index_html.write('<div class="art">')
         index_html.write(f'  <img class="img-responsive" src={img} alt={name} />')
         index_html.write(f'  <div class="caption">{name}</div>')
