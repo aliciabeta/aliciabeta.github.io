@@ -7,13 +7,12 @@ body {
 }
 
 .links {
-  float: right;
   font-weight: 500;
 }
 
 .links .text {
   color: #000;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .text {
@@ -52,7 +51,6 @@ img {
 }
 
 .aliBrand {
-  float: left;
   font-size: 28px;
   font-weight: 700;
 }
