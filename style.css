@@ -7,13 +7,17 @@ body {
 }
 
 .links {
-  float:right;
+  float: right;
   font-weight: 500;
 }
 
-.links .text{
-  color: #9d9d9d;
-  margin-left: 20px;
+.links .text {
+  color: #000;
+  margin-left: 10px;
+}
+
+.text {
+  font-size: 20px;
 }
 
 .links img{
@@ -21,7 +25,7 @@ body {
 }
 
 .links a:hover{
-  color: #fff;
+  color: #00a2e8;
   text-decoration:none;
 }
 
@@ -32,8 +36,9 @@ img {
 /**********/
 /* Header */
 /**********/
+
 .mainHeader {
-  background-color: #333;
+  background-color: #fff;
 }
 
 #topHeader {
@@ -41,25 +46,25 @@ img {
 }
 
 .aliBrand, .links {
-  height: 50px;
-  padding: 15px 15px;
-  line-height: 20px;
+  height: 100px;
+  padding: 30px 30px;
+  line-height: 40px;
 }
 
 .aliBrand {
   float: left;
-  font-size: 18px;
+  font-size: 28px;
   font-weight: 700;
 }
 
 .aliBrand a {
   text-decoration:none;
-  color: #fff;
+  color: #00a2e8;
 }
 
 .aliBrand a:hover {
   text-decoration:none;
-  color: #9d9d9d;
+  color: #000;
 }
 
 /***************/

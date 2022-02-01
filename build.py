@@ -12,12 +12,12 @@ def build_footer():
     return footer_html
 
 
-def build_about(title: str):
-    with open("about/index.html", "w") as about_html:
-        about_html.write(build_header(title))
-        with open("about/about.template", "r") as template:
-            about_html.write(template.read())
-        about_html.write(build_footer())
+def build_bio(title: str):
+    with open("bio/index.html", "w") as bio_html:
+        bio_html.write(build_header(title))
+        with open("bio/bio.template", "r") as template:
+            bio_html.write(template.read())
+        bio_html.write(build_footer())
 
 
 def build_index_html(title: str):
@@ -53,8 +53,9 @@ def build_index_html(title: str):
 
 
 def build():
-    build_index_html('Alicia Beta')
-    build_about('Alicia Beta - About')
+    website_name = "Alicia Beta"
+    build_index_html(f"{website_name}")
+    build_bio(f"{website_name} - Bio")
 
 
 if __name__ == "__main__":
