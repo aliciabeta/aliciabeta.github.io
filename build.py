@@ -20,6 +20,14 @@ def build_bio(title: str):
         bio_html.write(build_footer())
 
 
+def build_artwork(title: str):
+    with open("artwork/index.html", "w") as artwork_html:
+        artwork_html.write(build_header(title))
+        with open("artwork/artwork.template", "r") as template:
+            artwork_html.write(template.read())
+        artwork_html.write(build_footer())
+
+
 def build_index_html(title: str):
     with open("index.html", "w") as index_html:
         index_html.write(build_header(title))
@@ -53,9 +61,10 @@ def build_index_html(title: str):
 
 
 def build():
-    website_name = "Alicia Beta"
+    website_name = "Alicia Beta Art"
     build_index_html(f"{website_name}")
     build_bio(f"{website_name} - Bio")
+    build_artwork(f"{website_name} - Artwork")
 
 
 if __name__ == "__main__":

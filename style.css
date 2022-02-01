@@ -119,17 +119,33 @@ img#me {
 }
 
 /* Gallery */
-#gallery .left .art {
-  margin-bottom: 10px;
-}
-
-#gallery .right .art {
+#gallery .left .art, #gallery .right .art, #galleryNav .art {
   margin-bottom: 10px;
 }
 
 #gallery .caption {
   background-color: #333;
   color: #fff;
+}
+
+/* Gallery Nav */
+#galleryNav {
+  background-color: #fff;
+}
+
+#galleryNav .art {
+  margin-left: 10px;
+}
+
+#galleryNav .art img {
+  max-width: 96%;
+  padding: 2%;
+  background: #00a2e8;
+}
+
+#galleryNav .row {
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
 /********************/
