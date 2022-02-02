@@ -3,8 +3,10 @@ from typing import Optional
 
 
 class Gallery(Page):
-    def __init__(self, title: str):
+    def __init__(self, title: str, left: str, right: str):
         super().__init__(title)
+        self.left = left
+        self.right = right
 
     @property
     def body(self) -> Optional[str]:
@@ -14,7 +16,7 @@ class Gallery(Page):
 
         html += '  <div class="row no-gutter">'
         html += '    <div class="col-xs-12 col-sm-6 left">'
-        with open("gallery_left.txt", "r") as file:
+        with open(self.left, "r") as file:
             for line in file:
                 name, img = line.split(',')
                 html += '<div class="art">'
@@ -23,7 +25,7 @@ class Gallery(Page):
                 html += '</div>'
         html += '    </div>'
         html += '    <div class="col-xs-12 col-sm-6 right">'
-        with open("gallery_right.txt", "r") as file:
+        with open(self.right, "r") as file:
             for line in file:
                 name, img = line.split(',')
                 html += '<div class="art">'

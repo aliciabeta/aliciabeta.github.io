@@ -5,7 +5,7 @@ from gallery import Gallery
 def build():
     website_name = "Alicia Beta Art"
 
-    index = Gallery(f"{website_name}")
+    index = Gallery(f"{website_name}", "gallery_left.txt", "gallery_right.txt")
     index.write("index.html")
     bio = CommonPage(f"{website_name} - Bio", "bio/bio.template")
     bio.write("bio/index.html")
