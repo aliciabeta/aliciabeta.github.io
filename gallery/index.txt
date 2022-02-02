@@ -1,0 +1,5 @@
+Day of the Dead,day_of_the_dead,day_of_the_dead.jpg
+Portraits,portraits,portraits.jpg
+Pet Portraits,pet_portraits,pet_portraits.jpg
+Abstract,abstract,abstract.jpg
+Miscellaneous,miscellaneous,miscellaneous.jpg

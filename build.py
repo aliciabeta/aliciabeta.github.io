@@ -1,16 +1,16 @@
 from page import CommonPage
-from gallery import Gallery
+from gallery import create_gallery
 
 
 def build():
     website_name = "Alicia Beta Art"
 
-    index = Gallery(f"{website_name}", "gallery_left.txt", "gallery_right.txt")
-    index.write("index.html")
+    create_gallery("gallery", "artwork", website_name)
+
     bio = CommonPage(f"{website_name} - Bio", "bio/bio.template")
     bio.write("bio/index.html")
-    artwork = CommonPage(f"{website_name} - Artwork", "artwork/artwork.template")
-    artwork.write("artwork/index.html")
+    index = CommonPage(f"{website_name}", "index.template")
+    index.write("index.html")
 
 
 if __name__ == "__main__":

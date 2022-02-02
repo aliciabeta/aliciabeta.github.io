@@ -1,3 +1,4 @@
+import os.path
 from typing import Optional
 from abc import abstractmethod
 
@@ -41,5 +42,8 @@ class CommonPage(Page):
 
     @property
     def body(self) -> Optional[str]:
-        with open(self.body_template, "r") as file:
-            return file.read()
+        if os.path.exists(self.body_template):
+            with open(self.body_template, "r") as file:
+                return file.read()
+        else:
+            return self.body_template
