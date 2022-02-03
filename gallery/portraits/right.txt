@@ -1,8 +1,15 @@
-Ol' Blue Eyes,ol_blue_eyes.jpg
-Pings,pings.jpg
-Sailor Franco,sailor_franco.jpg
-Salvador,salvador.jpg
-Self Portrait,self_portrait.jpg
-Sexton,sexton.jpg
-Shannon,shannon.jpg
-Two Hearts One Pulse,two_hearts_one_pulse.jpg
+Franko,R2.jpg
+Ol Blue Eyes,R3.jpg
+Doyenne,R4.jpg
+Einstein,R5.jpg
+Biggie,R6.jpg
+Marti,R7.jpg
+King,R8.jpg
+Two Hearts,R9.jpg
+Lennon,R10.jpg
+Nadia,R11.jpg
+Yoga,R12.jpg
+Hello,R13.jpg
+Biggie Smalls,R14.jpg
+Gambino,R15.jpg
+Chris,R16.jpg

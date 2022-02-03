@@ -92,7 +92,8 @@ class Gallery(Page):
                 name, img = line.split(',')
                 html += '<div class="art">'
                 html += f'  <img class="img-responsive" src="{self.img_path}{img}" alt="{name}" />'
-                html += f'  <div class="caption">{name}</div>'
+                if name:
+                    html += f'  <div class="caption">{name}</div>'
                 html += '</div>'
         html += '    </div>'
         html += '    <div class="col-xs-12 col-sm-6 right">'
@@ -101,7 +102,8 @@ class Gallery(Page):
                 name, img = line.split(',')
                 html += '<div class="art">'
                 html += f'  <img class="img-responsive" src="{self.img_path}{img}" alt="{name}" />'
-                html += f'  <div class="caption">{name}</div>'
+                if name:
+                    html += f'  <div class="caption">{name}</div>'
                 html += '</div>'
         html += '    </div>'
         html += '  </div>'

@@ -1,8 +1,15 @@
-Bob Marley,bob_marley.jpg
-Captain Cristoph,captain_cristoph.jpg
-E=mc2,emc2.jpg
-John Lennon,john_lennon.jpg
-King,king.jpg
-Meditation,meditation.jpg
-Miss Monroe,miss_monroe.jpg
-Nevermore,nevermore.jpg
+Armstrong,L1.jpg
+Nevermore,L2.jpg
+Warhol,L3.jpg
+Frida,L4.jpg
+Dali,L5.jpg
+Shannon,L7.jpg
+Bride,L8.jpg
+Frankenstein,L9.jpg
+Sexton,L10.jpg
+Einstein,L11.jpg
+Victoria,L12.jpg
+Marley,L13.jpg
+Nude Yoga,L14.jpg
+Green Frida,L16.jpg
+Albert,L17.jpg
