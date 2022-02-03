@@ -1,0 +1,8 @@
+Bob Marley,bob_marley.jpg
+Captain Cristoph,captain_cristoph.jpg
+E=mc2,emc2.jpg
+John Lennon,john_lennon.jpg
+King,king.jpg
+Meditation,meditation.jpg
+Miss Monroe,miss_monroe.jpg
+Nevermore,nevermore.jpg

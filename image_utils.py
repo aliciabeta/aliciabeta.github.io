@@ -6,9 +6,9 @@ def max_resize(max_size: int, input_file: str, output_file: str):
         width, height = input_img.size
 
         if width < max_size:
-            raise ValueError('width of image (%s) is less than max (%s)', width, max)
+            raise ValueError(f'width ({width}) of image ({input_file}) is less than max ({max_size})')
         if height < max_size:
-            raise ValueError('height of image (%s) is less than max (%s)', height, max)
+            raise ValueError(f'height ({height}) of image ({input_file}) is less than max ({max_size})')
         if width > height:
             # width / height = max / x
             # x = max * height / width
@@ -19,5 +19,5 @@ def max_resize(max_size: int, input_file: str, output_file: str):
             new_height = max_size
             new_width = max_size * width / height
 
-        input_img.resize((new_width, new_height))
+        input_img.resize((int(new_width), int(new_height)))
         input_img.save(output_file)
