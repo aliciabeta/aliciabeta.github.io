@@ -18,6 +18,6 @@ def max_resize(max_size: int, input_file: str, output_file: str):
             # width / height = x / max
             new_height = max_size
             new_width = max_size * width / height
-
-        input_img.resize((int(new_width), int(new_height)))
-        input_img.save(output_file)
+        new_size = (int(new_width), int(new_height))
+        resized_img = input_img.resize(new_size)
+        resized_img.save(output_file)
