@@ -64,7 +64,7 @@ def create_gallery(src_path: str, dest_path: str, website_name: str):
         for input_file in [left_index, right_index]:
             with open(input_file, "r") as file:
                 for line in file:
-                    name, img = line.split(',')
+                    _, img = line.split(',')
                     img = img.rstrip()
                     max_resize(max_size, f"{src_folder_path}/{img}", f"{dest_folder_path}/{img}")
 

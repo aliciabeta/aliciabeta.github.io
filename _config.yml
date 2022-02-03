@@ -1,0 +1,1 @@
+exclude: ['gallery/', '*.py', '*.template', '*.psd']
